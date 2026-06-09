@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.top-header {
+  text-align: center;
+  background-color: #ffd500;
+}
+.mid-header {
+  background-color: #ffd500;
+}
+.mid-header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mid-header ul li,
+a {
+  color: black;
+  font-size: 14px;
+}
+/* Lấy thẻ li thứ 2 và i trong đó */
+.mid-header ul li:nth-child(2) i {
+  color: black;
+}
+.mid-header ul li:nth-child(2) input {
+  height: 40px;
+  width: 120%;
+  border-radius: 15px;
+  /* Ẩn viền */
+  border: none;
+  /* Chỉnh nội dung mặc định đẩy sang phải */
+  padding-left: 34px;
+  /* Ẩn viền khi ấn  */
+  outline: none;
+}
+.mid-header ul li:nth-child(2) {
+  position: relative;
+}
+.mid-header ul li:nth-child(2) i {
+  position: absolute;
+  font-size: 15px;
+  /* Sau khi định nghĩa absolute thì phải dùng bottom chứ k đc dùng margin-right */
+  bottom: 10px;
+  left: 10px;
+  /* line-height:30px */
+  /* Rê chuột gần sẽ hiện hình ngón tay */
+  cursor: pointer;
+}
+/* Lấy thẻ li thứ 5 và tác động lên span */
+.mid-header ul li:nth-child(5) span {
+  margin-left: 150px;
+  margin-right: 10px;
+}
+.mid-header ul li:nth-child(5) i {
+  margin-right: 4px;
+  font-size: 20px;
+
+  color: white;
+}
+.mid-header ul li:nth-child(5) button {
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(242, 242, 114);
+  /* Độ trễ khi rê chuột vô */
+  transition: 0.3 ease;
+}
+.mid-header ul li:nth-child(5) button i {
+  margin-bottom: 8px;
+}
+.mid-header ul li:nth-child(5) button:hover {
+  background-color: rgb(232, 220, 220);
+}
