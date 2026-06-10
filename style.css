@@ -59,6 +59,31 @@ a {
   /* Rê chuột gần sẽ hiện hình ngón tay */
   cursor: pointer;
 }
+.mid-header ul li:nth-child(3) button
+{
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ffd500;
+  transition: 0.3 ease;
+}
+.mid-header ul li:nth-child(3) button:hover{
+  background-color: rgb(232, 220, 220);
+}
+.mid-header ul li:nth-child(4) button{
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: #ffd500;
+  transition: 1.9 ease;
+}
+.mid-header ul li:nth-child(4) button:hover{
+   background-color: rgb(232, 220, 220);
+}
 /* Lấy thẻ li thứ 5 và tác động lên span */
 .mid-header ul li:nth-child(5) span {
   margin-left: 150px;
@@ -82,5 +107,164 @@ a {
   margin-bottom: 8px;
 }
 .mid-header ul li:nth-child(5) button:hover {
+  background-color: rgb(232, 220, 220);
+}
+.bottom-header{
+  background-color: #ffd500;
+}
+.bottom-header ul{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 10px 0;
+}
+.bottom-header ul li:nth-child(1) button{
+  height: 20px;
+ border-bottom: none;
+ border-radius: 10px 10px 0px 0px;
+ border: none;
+ margin-bottom: -15px;
+ background-color: #ffd500;
+ padding-left: 14px;
+ padding-right: 14px;
+ padding-top: 5px;
+  padding-bottom: 26px;
+}
+.bottom-header ul li:nth-child(1) button:hover{
+  background-color: rgb(232, 220, 220);
+}
+.bottom-header ul li:nth-child(2) button{
+    height: 20px;
+ border-bottom: none;
+ border-radius: 10px 10px 0px 0px;
+ border: none;
+ margin-bottom: -15px;
+ background-color: #ffd500;
+ padding-left: 14px;
+ padding-right: 14px;
+ padding-top: 5px;
+  padding-bottom: 26px;
+}
+.bottom-header ul li:nth-child(2) button:hover{
+  background-color: rgb(232, 220, 220);
+}
+.bottom-header ul li:nth-child(3) button{
+    height: 20px;
+ border-bottom: none;
+ border-radius: 10px 10px 0px 0px;
+ border: none;
+ margin-bottom: -15px;
+ background-color: #ffd500;
+ padding-left: 14px;
+ padding-right: 14px;
+ padding-top: 5px;
+  padding-bottom: 26px;
+}
+.bottom-header ul li:nth-child(3) button:hover{
+  background-color: rgb(232, 220, 220);
+}
+.bottom-header ul li:nth-child(4) button{
+    height: 20px;
+ border-bottom: none;
+ border-radius: 10px 10px 0px 0px;
+ border: none;
+ margin-bottom: -15px;
+ background-color: #ffd500;
+ padding-left: 14px;
+ padding-right: 14px;
+ padding-top: 5px;
+  padding-bottom: 26px;
+}
+.bottom-header ul li:nth-child(4) button:hover{
+  background-color: rgb(232, 220, 220);
+}
+.bottom-header ul li:nth-child(5) button{
+    height: 20px;
+ border-bottom: none;
+ border-radius: 10px 10px 0px 0px;
+ border: none;
+ margin-bottom: -15px;
+ background-color: #ffd500;
+ padding-left: 14px;
+ padding-right: 14px;
+ padding-top: 5px;
+  padding-bottom: 26px;
+}
+.bottom-header ul li:nth-child(5) button:hover{
+  background-color: rgb(232, 220, 220);
+}
+.bottom-header ul li:nth-child(6) button{
+    height: 20px;
+ border-bottom: none;
+ border-radius: 10px 10px 0px 0px;
+ border: none;
+ margin-bottom: -15px;
+ background-color: #ffd500;
+ padding-left: 14px;
+ padding-right: 14px;
+ padding-top: 5px;
+  padding-bottom: 26px;
+}
+.bottom-header ul li:nth-child(6) button:hover{
+  background-color: rgb(232, 220, 220);
+}
+.bottom-header ul li:nth-child(7) button{
+    height: 20px;
+ border-bottom: none;
+ border-radius: 10px 10px 0px 0px;
+ border: none;
+ margin-bottom: -15px;
+ background-color: #ffd500;
+ padding-left: 14px;
+ padding-right: 14px;
+ padding-top: 5px;
+  padding-bottom: 26px;
+}
+.bottom-header ul li:nth-child(7) button:hover{
+  background-color: rgb(232, 220, 220);
+}
+.bottom-header ul li:nth-child(8) button{
+    height: 20px;
+ border-bottom: none;
+ border-radius: 10px 10px 0px 0px;
+ border: none;
+ margin-bottom: -15px;
+ background-color: #ffd500;
+ padding-left: 14px;
+ padding-right: 14px;
+ padding-top: 5px;
+  padding-bottom: 26px;
+}
+.bottom-header ul li:nth-child(8) button:hover{
+  background-color: rgb(232, 220, 220);
+}
+.bottom-header ul li:nth-child(9) button{
+    height: 20px;
+ border-bottom: none;
+ border-radius: 10px 10px 0px 0px;
+ border: none;
+ margin-bottom: -15px;
+ background-color: #ffd500;
+ padding-left: 14px;
+ padding-right: 14px;
+ padding-top: 5px;
+  padding-bottom: 26px;
+}
+.bottom-header ul li:nth-child(9) button:hover{
+  background-color: rgb(232, 220, 220);
+}
+.bottom-header ul li:nth-child(10) button{
+    height: 20px;
+ border-bottom: none;
+ border-radius: 10px 10px 0px 0px;
+ border: none;
+ margin-bottom: -15px;
+ background-color: #ffd500;
+ padding-left: 14px;
+ padding-right: 14px;
+ padding-top: 5px;
+ padding-bottom: 26px;
+}
+.bottom-header ul li:nth-child(10) button:hover{
   background-color: rgb(232, 220, 220);
 }
