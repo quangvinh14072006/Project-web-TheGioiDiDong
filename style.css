@@ -59,8 +59,7 @@ a {
   /* Rê chuột gần sẽ hiện hình ngón tay */
   cursor: pointer;
 }
-.mid-header ul li:nth-child(3) button
-{
+.mid-header ul li:nth-child(3) button {
   height: 40px;
   border-radius: 15px;
   border: none;
@@ -69,10 +68,10 @@ a {
   background-color: #ffd500;
   transition: 0.3 ease;
 }
-.mid-header ul li:nth-child(3) button:hover{
+.mid-header ul li:nth-child(3) button:hover {
   background-color: rgb(232, 220, 220);
 }
-.mid-header ul li:nth-child(4) button{
+.mid-header ul li:nth-child(4) button {
   height: 40px;
   padding-left: 10px;
   padding-right: 10px;
@@ -81,12 +80,12 @@ a {
   background-color: #ffd500;
   transition: 1.9 ease;
 }
-.mid-header ul li:nth-child(4) button:hover{
-   background-color: rgb(232, 220, 220);
+.mid-header ul li:nth-child(4) button:hover {
+  background-color: rgb(232, 220, 220);
 }
 /* Lấy thẻ li thứ 5 và tác động lên span */
 .mid-header ul li:nth-child(5) span {
-  margin-left: 150px;
+  margin-left: 5px;
   margin-right: 10px;
 }
 .mid-header ul li:nth-child(5) i {
@@ -102,169 +101,353 @@ a {
   background-color: rgb(242, 242, 114);
   /* Độ trễ khi rê chuột vô */
   transition: 0.3 ease;
+  padding-right: 17px;
+  /* margin-left: 90px; */
+  margin-right: -20px;
 }
 .mid-header ul li:nth-child(5) button i {
   margin-bottom: 8px;
+  margin-left: 5px;
+}
+.bottom-header-content {
+  margin: 0 0px;
 }
 .mid-header ul li:nth-child(5) button:hover {
   background-color: rgb(232, 220, 220);
 }
-.bottom-header{
+/* BOTTOM HEADER */
+.bottom-header {
   background-color: #ffd500;
 }
-.bottom-header ul{
+.bottom-header ul {
   display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
-  padding: 10px 0;
+  justify-content: space-between; /* Chia đều khoảng cách giữa các mục */
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
-.bottom-header ul li:nth-child(1) button{
+.bottom-header ul li {
+  padding: 0;
+  margin: 0;
+}
+/* Áp dụng chung cho TẤT CẢ các nút button bên trong li */
+.bottom-header ul li button {
+  background-color: transparent; /* Nền trong suốt để tiệp hoàn toàn với nền vàng */
+  border: none;
+  outline: none;
+  padding: 15px 5px; /* Tăng khoảng trống trên dưới để dễ click hơn */
+  cursor: pointer;
+
+  /* Flex để icon và chữ nằm ngang hàng, ngay ngắn */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 14px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  color: #000;
+}
+
+.bottom-header ul li a {
+  color: black;
+}
+/* Căn chỉnh lại size của icon cân đối */
+.bottom-header ul li button i {
+  font-size: 16px;
+}
+/* Hiệu ứng khi rê chuột */
+.bottom-header ul li button:hover {
+  background-color: white;
+  border-radius: 8px 8px 0px 0px;
+}
+/* .bottom-header ul li:nth-child(1) a {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.bottom-header ul li:nth-child(1) button {
   height: 20px;
- border-bottom: none;
- border-radius: 10px 10px 0px 0px;
- border: none;
- margin-bottom: -15px;
- background-color: #ffd500;
- padding-left: 14px;
- padding-right: 14px;
- padding-top: 5px;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  margin-bottom: -15px;
+  background-color: #ffd500;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
   padding-bottom: 26px;
 }
-.bottom-header ul li:nth-child(1) button:hover{
+.bottom-header ul li:nth-child(1) button:hover {
   background-color: rgb(232, 220, 220);
 }
-.bottom-header ul li:nth-child(2) button{
-    height: 20px;
- border-bottom: none;
- border-radius: 10px 10px 0px 0px;
- border: none;
- margin-bottom: -15px;
- background-color: #ffd500;
- padding-left: 14px;
- padding-right: 14px;
- padding-top: 5px;
+.bottom-header ul li:nth-child(2) a {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.bottom-header ul li:nth-child(2) button {
+  height: 20px;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  margin-bottom: -15px;
+  background-color: #ffd500;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
   padding-bottom: 26px;
 }
-.bottom-header ul li:nth-child(2) button:hover{
-  background-color: rgb(232, 220, 220);
+.bottom-header ul li:nth-child(2) button:hover { */
+/* background-color: rgb(232, 220, 220);
 }
-.bottom-header ul li:nth-child(3) button{
-    height: 20px;
- border-bottom: none;
- border-radius: 10px 10px 0px 0px;
- border: none;
- margin-bottom: -15px;
- background-color: #ffd500;
- padding-left: 14px;
- padding-right: 14px;
- padding-top: 5px;
+.bottom-header ul li:nth-child(3) a {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.bottom-header ul li:nth-child(3) button {
+  height: 20px;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  margin-bottom: -15px;
+  background-color: #ffd500;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
   padding-bottom: 26px;
 }
-.bottom-header ul li:nth-child(3) button:hover{
+.bottom-header ul li:nth-child(3) button:hover {
   background-color: rgb(232, 220, 220);
 }
-.bottom-header ul li:nth-child(4) button{
-    height: 20px;
- border-bottom: none;
- border-radius: 10px 10px 0px 0px;
- border: none;
- margin-bottom: -15px;
- background-color: #ffd500;
- padding-left: 14px;
- padding-right: 14px;
- padding-top: 5px;
+.bottom-header ul li:nth-child(4) a {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.bottom-header ul li:nth-child(4) button {
+  height: 20px;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  margin-bottom: -15px;
+  background-color: #ffd500;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
   padding-bottom: 26px;
 }
-.bottom-header ul li:nth-child(4) button:hover{
+.bottom-header ul li:nth-child(4) button:hover {
   background-color: rgb(232, 220, 220);
 }
-.bottom-header ul li:nth-child(5) button{
-    height: 20px;
- border-bottom: none;
- border-radius: 10px 10px 0px 0px;
- border: none;
- margin-bottom: -15px;
- background-color: #ffd500;
- padding-left: 14px;
- padding-right: 14px;
- padding-top: 5px;
+.bottom-header ul li:nth-child(5) button {
+  height: 20px;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  margin-bottom: -15px;
+  background-color: #ffd500;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
   padding-bottom: 26px;
 }
-.bottom-header ul li:nth-child(5) button:hover{
+.bottom-header ul li:nth-child(5) a {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.bottom-header ul li:nth-child(5) button:hover {
   background-color: rgb(232, 220, 220);
 }
-.bottom-header ul li:nth-child(6) button{
-    height: 20px;
- border-bottom: none;
- border-radius: 10px 10px 0px 0px;
- border: none;
- margin-bottom: -15px;
- background-color: #ffd500;
- padding-left: 14px;
- padding-right: 14px;
- padding-top: 5px;
+.bottom-header ul li:nth-child(6) a {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.bottom-header ul li:nth-child(6) button {
+  height: 20px;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  margin-bottom: -15px;
+  background-color: #ffd500;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
   padding-bottom: 26px;
 }
-.bottom-header ul li:nth-child(6) button:hover{
+.bottom-header ul li:nth-child(6) button:hover {
   background-color: rgb(232, 220, 220);
 }
-.bottom-header ul li:nth-child(7) button{
-    height: 20px;
- border-bottom: none;
- border-radius: 10px 10px 0px 0px;
- border: none;
- margin-bottom: -15px;
- background-color: #ffd500;
- padding-left: 14px;
- padding-right: 14px;
- padding-top: 5px;
+.bottom-header ul li:nth-child(7) a {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.bottom-header ul li:nth-child(7) button {
+  height: 20px;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  margin-bottom: -15px;
+  background-color: #ffd500;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
   padding-bottom: 26px;
 }
-.bottom-header ul li:nth-child(7) button:hover{
+.bottom-header ul li:nth-child(7) button:hover {
   background-color: rgb(232, 220, 220);
 }
-.bottom-header ul li:nth-child(8) button{
-    height: 20px;
- border-bottom: none;
- border-radius: 10px 10px 0px 0px;
- border: none;
- margin-bottom: -15px;
- background-color: #ffd500;
- padding-left: 14px;
- padding-right: 14px;
- padding-top: 5px;
+.bottom-header ul li:nth-child(8) a {
+  padding-right: 8px;
+  padding-left: 7px;
+}
+.bottom-header ul li:nth-child(8) button {
+  height: 20px;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  margin-bottom: -15px;
+  background-color: #ffd500;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
   padding-bottom: 26px;
 }
-.bottom-header ul li:nth-child(8) button:hover{
+.bottom-header ul li:nth-child(8) button:hover {
   background-color: rgb(232, 220, 220);
 }
-.bottom-header ul li:nth-child(9) button{
-    height: 20px;
- border-bottom: none;
- border-radius: 10px 10px 0px 0px;
- border: none;
- margin-bottom: -15px;
- background-color: #ffd500;
- padding-left: 14px;
- padding-right: 14px;
- padding-top: 5px;
+.bottom-header ul li:nth-child(9) a {
+  padding-right: 7px;
+  padding-left: 7px;
+}
+.bottom-header ul li:nth-child(9) button {
+  height: 20px;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  margin-bottom: -15px;
+  background-color: #ffd500;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
   padding-bottom: 26px;
 }
-.bottom-header ul li:nth-child(9) button:hover{
+.bottom-header ul li:nth-child(9) button:hover {
   background-color: rgb(232, 220, 220);
 }
-.bottom-header ul li:nth-child(10) button{
-    height: 20px;
- border-bottom: none;
- border-radius: 10px 10px 0px 0px;
- border: none;
- margin-bottom: -15px;
- background-color: #ffd500;
- padding-left: 14px;
- padding-right: 14px;
- padding-top: 5px;
- padding-bottom: 26px;
+.bottom-header ul li:nth-child(10) a {
+  padding-right: 8px;
+  padding-left: 7px;
 }
-.bottom-header ul li:nth-child(10) button:hover{
+.bottom-header ul li:nth-child(10) button {
+  height: 20px;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  margin-bottom: -15px;
+  background-color: #ffd500;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
+  padding-bottom: 26px;
+}
+.bottom-header ul li:nth-child(10) button:hover {
   background-color: rgb(232, 220, 220);
+} */
+
+.bottom-header ul li:nth-child(9) {
+  position: relative;
+}
+.bottom-header ul li:nth-child(9)::before {
+  position: absolute;
+  content: "Giảm 5%";
+  background-color: red;
+  height: 14px;
+  width: 45px;
+  display: block;
+  border-radius: 5px;
+  right: 15px;
+  top: 0;
+  font-size: 10px;
+  padding-left: 3px;
+  color: white;
+  padding-top: 1px;
+}
+.bottom-header ul li:nth-child(9)::after {
+  position: absolute;
+  content: "";
+  background-color: #ff0000;
+  height: 7px;
+  width: 7px;
+  top: 11px;
+  z-index: 2;
+  right: 50px;
+  transform: rotate(45deg);
+}
+/* ADRESS-FORM */
+.adress-form {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  /* Nằm trên tất cả */
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+/* Class này dùng thêm vào JS */
+.adress-form.active{
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.adress-form-content {
+  width: 500px;
+  height: 550px;
+  background-color: white;
+  border-radius: 20px;
+}
+.adress-form-content form {
+  padding: 0 40px;
+}
+.adress-form-content h2 {
+  margin-top: 10px;
+  position: relative;
+}
+.adress-form-content h2 span {
+  display: block;
+  position: absolute;
+  height: 30px;
+  padding: 0 6px;
+  /* border: 1px solid black; */
+  right: 0;
+  top: 0;
+  padding-right: 4px;
+  padding-top: 2.5px;
+}
+
+.adress-form-content form div {
+  position: relative;
+}
+.adress-form-content form div i {
+  position: absolute;
+  top: 10px;
+  right: 3px;
+  cursor: pointer;
+}
+.adress-form-content h3 {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+.adress-form-content form input,
+select {
+  height: 40px;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
 }
