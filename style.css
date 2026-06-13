@@ -392,15 +392,17 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  
+
   /* Nằm trên tất cả */
   z-index: 999;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
 }
 /* Class này dùng thêm vào JS */
-.adress-form.active{
+.adress-form.active {
   display: flex;
   opacity: 1;
   visibility: visible;
@@ -450,4 +452,178 @@ select {
   display: block;
   width: 100%;
   margin-top: 20px;
+}
+/* SUBPHUKIEN */
+.bottom-header-content ul li {
+  position: relative;
+}
+.sub-phukien {
+  position: absolute;
+  background-color: #ddd;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  display: none;
+  border-radius: 10px;
+}
+.sub-phukien ul {
+  display: flex;
+  /* flex-direction: column; */
+}
+.sub-phukien ul li {
+  padding: 0 10px;
+}
+.sub-phukien ul li:hover {
+  background-color: rgb(195, 206, 206);
+  border-radius: 10px;
+}
+.bottom-header-content ul li:nth-child(3):hover .sub-phukien {
+  display: block;
+}
+.sub-phukien ul li a img {
+  width: 70px;
+  /* height: 50px; */
+}
+.maycu {
+  position: absolute;
+  background-color: #ddd;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
+.maycu ul li:hover {
+  background-color: rgb(195, 206, 206);
+  border-radius: 10px;
+}
+.bottom-header-content ul li:nth-child(7):hover .maycu {
+  display: block;
+}
+.maycu ul li a img {
+  width: 70px;
+  padding: 10px;
+}
+.simthecao {
+  position: absolute;
+  background-color: #ddd;
+  padding: 10px;
+  height: auto;
+  padding: auto;
+  border-radius: 10px;
+  display: none;
+}
+.simthecao ul li:hover {
+  background-color: rgb(195, 206, 206);
+  border-radius: 10px;
+}
+.simthecao ul li a img {
+  width: 70px;
+  padding: 10px;
+}
+.bottom-header-content ul li:nth-child(9):hover .simthecao {
+  display: block;
+}
+.dichvu-tienich {
+  position: absolute;
+  right: -5px;
+  background-color: #ddd;
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  display: none;
+}
+.dichvu-tienich ul li:hover {
+  background-color: rgb(195, 206, 206);
+  border-radius: 10px;
+}
+.dichvu-tienich-left-top {
+  margin-right: 55px;
+}
+.dichvu-tienich-left-top ul li a img {
+  width: 60px;
+  padding: 10px;
+}
+.dichvu-tienich-right-top ul li a img {
+  width: 60px;
+  padding: 10px;
+}
+.bottom-header-content ul li:nth-child(10):hover .dichvu-tienich {
+  display: flex;
+}
+.bottom-header > ul > li:nth-child(3) {
+  position: relative;
+}
+.bottom-header-content > ul > li:nth-child(3) button {
+  position: relative; /* Tạo gốc tọa độ cho dấu chấm đỏ */
+}
+.bottom-header-content > ul > li:nth-child(3):hover::after {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  content: "";
+  background-color: #ff0000;
+  top: 39px;
+  right: 30px;
+  transform: rotate(45deg);
+  background-color: #ddd;
+}
+.bottom-header-content > ul > li:nth-child(7) button {
+  position: relative;
+}
+.bottom-header-content > ul > li:nth-child(7):hover::after {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  content: "";
+  background-color: #ddd;
+  top: 39px;
+  right: 60px;
+  transform: rotate(45deg);
+}
+.bottom-header-content > ul > li:nth-child(9) button {
+  position: relative;
+}
+.bottom-header-content > ul > li:nth-child(9):hover::after {
+  position: absolute;
+  content: "";
+  background-color: #ddd;
+  width: 17px;
+  height: 17px;
+  top: 39px;
+  right: 60px;
+}
+.bottom-header-content > ul > li:nth-child(10)button {
+  position: relative;
+}
+.bottom-header-content > ul > li:nth-child(10):hover::after {
+  position: absolute;
+  content: "";
+  background-color: #ddd;
+  width: 17px;
+  height: 17px;
+  top: 39px;
+  right: 40px;
+  transform: rotate(45deg);
+}
+/* FOOTER */
+.container-footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-top: 1px solid black;
+}
+.container-footer ul {
+  margin: 0 10px;
+}
+.VeCongTy ul li a:hover {
+  color: blue;
+}
+.ThongTinKhac ul li a:hover {
+  color: blue;
+}
+.container-footer-bottom {
+  background-color: rgb(200, 200, 200);
+  padding: 10px;
+  font-size: 15px;
 }
