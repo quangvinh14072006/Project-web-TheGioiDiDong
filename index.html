@@ -12,42 +12,44 @@
 </head>
 
 <body>
-    <header class="top-header">
-        <img style="width: 80%;" src="img/anh1.png" alt="">
+    <header>
+        <img style="width: 100%;" src="img/anh1.png" alt="">
     </header>
-    <header class="mid-header">
+    <nav>
         <div class="container">
             <ul>
-                <li><a href=""><img style="width: 190px;" src="img/logotgdd.png" alt=""></a></li>
-                <li style="margin-right: 290px;width: 350px; margin-right: 60px;"><i
-                        class="fa-solid fa-magnifying-glass"></i><input type="text"
-                        placeholder="Mở bán Laptop chính hãng"></li>
-                <li><a href=""><button><i class="fa-solid fa-person"></i>Đăng nhập</button></a></li>
-                <li><a href=""><button><i class="fa-solid fa-cart-flatbed"></i>Giỏ hàng</button></a></li>
-                <li id="adress-form">
-                    <a href="#"><button class="location-btn"><i class="fa-solid fa-location-dot"></i><span>Hồ Chí
-                                Minh</span><i style="padding-left: 152px;"
-                                class="fa-solid fa-angle-right"></i></button></a>
+                <li><a href=""><img style="width: 170px ;" src="img/logotgdd.png" alt=""></a></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Tìm kiếm ..."></li>
+                <li><a href=""><i class="fa-solid fa-user"></i> Đăng nhập</a></li>
+                <li><a href=""><i class="fa-solid fa-cart-flatbed"></i> Giỏ hàng</a><span class="btn-content"><span
+                            class="btn-top"></span></span></li>
+                <li id="adress-from"><a href="#"><button><i class="fa-solid fa-location-dot"> </i> Hồ Chí Minh <span><i
+                                    class="fa-solid fa-angle-right"></i></span></button></a>
+
                 </li>
-                <div class="adress-form">
-                    <div class="adress-form-content">
-                        <h2>Chọn địa chỉ nhận hàng <span><i id="btn-close" style="color: rgb(81, 74, 74);"
-                                    class="fa-solid fa-xmark"></i></span></h2>
+                <div class="adress-from">
+                    <div class="adress-from-content">
+                        <h2>Chọn địa chỉ nhận hàng <span><i id="adress-close" class="fa-solid fa-xmark"></i></span></h2>
                         <form action="">
-                            <div><i style="color: black;" class="fa-solid fa-magnifying-glass"></i><input type="text"
-                                    placeholder="Nhập địa chỉ số nhà,tên đường"></div>
-                            <h3>Hoặc</h3>
+                            <div class="from-input">
+                                <input type="text" placeholder="Nhập địa chỉ(Tòa nhà,Số nhà,Tên đường,...)để gợi ý"><i
+                                    class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <h4>Hoặc</h4>
                             <select name="" id="">
-                                <option value="#">Chọn địa điểm</option>
+                                <option value="#">Chọn địa chỉ</option>
+                                <option value="#">Đồng Nai</option>
                                 <option value="#">Hồ Chí Minh</option>
                             </select>
                             <select name="" id="">
-                                <option value="#">Chọn quận huyện</option>
-                                <option value="#">Quận 7</option>
+                                <option value="#">Chọn Quận/Huyện</option>
+                                <option value="#">Đồng Nai</option>
+                                <option value="#">Hồ Chí Minh</option>
                             </select>
                             <select name="" id="">
-                                <option value="#">Chọn phường xã</option>
-                                <option value="#">Tân Mỹ</option>
+                                <option value="#">Chọn Phường/Xã</option>
+                                <option value="#">Đồng Nai</option>
+                                <option value="#">Hồ Chí Minh</option>
                             </select>
                             <img style="width: 250px;" src="img/map.png" alt="">
                         </form>
@@ -55,67 +57,19 @@
                 </div>
             </ul>
         </div>
-    </header>
-    <header class="bottom-header">
+    </nav>
+    <section class="menu-bar">
         <div class="container">
-            <div class="bottom-header-content">
+            <div class="menu-bar-content">
                 <ul>
-                    <li><a href=""><button><i class="fa-solid fa-mobile"></i> Điện thoại</button></a></li>
-                    <li><a href=""><button><i class="fa-solid fa-laptop"></i> Laptop</button></a></li>
-                    <li><a href=""><button><i class="fa-solid fa-headphones"></i> Phụ kiện <i
-                                    class="fa-solid fa-angle-down"></i></button></a>
+                    <li><a href=""><i class="fa-solid fa-mobile"></i> Điện thoại</a></li>
+                    <li><a href=""><i class="fa-solid fa-laptop"></i> Laptop</a></li>
+                    <li><a href=""><i class="fa-solid fa-headphones"></i> Phụ kiện<span><i
+                                    class="fa-solid fa-angle-down"></i></span></a>
                         <div class="sub-phukien">
-                            <h3>Phụ kiện di động</h3>
-                            <ul>
-                                <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
-                                <li><a href=""><img src="img/pk2.png" alt=""> Sạc cáp</a></li>
-                                <li><a href=""><img src="img/pk3.png" alt=""> Ốp lưng điện thoại</a></li>
-                                <li><a href=""><img src="img/pk4.png" alt=""> Ốp lưng máy tính bảng</a></li>
-                                <li><a href=""><img src="img/pk5.png" alt=""> Miếng dán</a></li>
-                                <li><a href=""><img src="img/pk6.png" alt=""> Miếng dán Camera</a></li>
-                                <li><a href=""><img src="img/pk7.png" alt=""> Chuột máy tính</a></li>
-                            </ul>
-                            <h3>Thiết bị âm thanh</h3>
-                            <ul>
-                                <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
-                                <li><a href=""><img src="img/pk2.png" alt=""> Sạc cáp</a></li>
-                                <li><a href=""><img src="img/pk3.png" alt=""> Ốp lưng điện thoại</a></li>
-                                <li><a href=""><img src="img/pk4.png" alt=""> Ốp lưng máy tính bảng</a></li>
-                                <li><a href=""><img src="img/pk5.png" alt=""> Miếng dán</a></li>
-                                <li><a href=""><img src="img/pk6.png" alt=""> Miếng dán Camera</a></li>
-                                <li><a href=""><img src="img/pk7.png" alt=""> Chuột máy tính</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href=""><button><i class="fa-brands fa-android"></i> Smartwatch</button></a></li>
-                    <li><a href=""><button><i class="fa-solid fa-clock"></i> Đồng hồ</button></a></li>
-                    <li><a href=""><button><i class="fa-solid fa-tablet"></i> Tablet</button></a></li>
-                    <li><a href=""><button><i class="fa-solid fa-arrow-rotate-left"></i> Máy cũ,Thu cũ
-                                <i class="fa-solid fa-angle-down"></i></button></a>
-                        <div class="maycu">
-                            <ul>
-                                <li><a href=""><img src="img/maycu1.png" alt="">Máy cũ giá tốt</a></li>
-                                <li><a href=""><img src="img/maycu2.png" alt="">Thu cũ đổi mới</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href=""><button><i class="fa-solid fa-computer"></i> Màn hình,Máy in</button></a></li>
-                    <li><a href=""><button><i class="fa-solid fa-sim-card"></i> Sim,Thẻ cào <i
-                                    class="fa-solid fa-angle-down"></i></button></a>
-                        <div class="simthecao">
-                            <ul>
-                                <li><a href=""><img src="img/sim1.png" alt="">Sim, thẻ cào</a></li>
-                                <li><a href=""><img src="img/sim2.png" alt="">eSim du lịch</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href=""><button><i class="fa-brands fa-stackpath"></i> Dịch vụ tiện ích <i
-                                    class="fa-solid fa-angle-down"></i></button></a>
-                        <div class="dichvu-tienich">
-                            <div class="dichvu-tienich-left-top">
-                                <h3>Thanh toán hóa đơn</h3>
+                            <div class="sub-phukien-top">
+                                <h3>Phụ kiện di động</h3>
                                 <ul>
-
                                     <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
                                     <li><a href=""><img src="img/pk2.png" alt=""> Sạc cáp</a></li>
                                     <li><a href=""><img src="img/pk3.png" alt=""> Ốp lưng điện thoại</a></li>
@@ -124,10 +78,8 @@
                                     <li><a href=""><img src="img/pk6.png" alt=""> Miếng dán Camera</a></li>
                                     <li><a href=""><img src="img/pk7.png" alt=""> Chuột máy tính</a></li>
                                 </ul>
-                                <br>
-                                <h3>Tiện ích viễn thông</h3>
+                                <h3>Phụ kiện di động</h3>
                                 <ul>
-
                                     <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
                                     <li><a href=""><img src="img/pk2.png" alt=""> Sạc cáp</a></li>
                                     <li><a href=""><img src="img/pk3.png" alt=""> Ốp lưng điện thoại</a></li>
@@ -137,10 +89,9 @@
                                     <li><a href=""><img src="img/pk7.png" alt=""> Chuột máy tính</a></li>
                                 </ul>
                             </div>
-                            <div class="dichvu-tienich-right-top">
-                                <h3>Thanh toán hóa đơn</h3>
+                            <div class="sub-phukien-bottom">
+                                <h3>Phụ kiện laptop</h3>
                                 <ul>
-
                                     <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
                                     <li><a href=""><img src="img/pk2.png" alt=""> Sạc cáp</a></li>
                                     <li><a href=""><img src="img/pk3.png" alt=""> Ốp lưng điện thoại</a></li>
@@ -149,10 +100,8 @@
                                     <li><a href=""><img src="img/pk6.png" alt=""> Miếng dán Camera</a></li>
                                     <li><a href=""><img src="img/pk7.png" alt=""> Chuột máy tính</a></li>
                                 </ul>
-                                <br>
-                                <h3>Tiện ích khác</h3>
+                                <h3>Phụ kiện laptop</h3>
                                 <ul>
-
                                     <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
                                     <li><a href=""><img src="img/pk2.png" alt=""> Sạc cáp</a></li>
                                     <li><a href=""><img src="img/pk3.png" alt=""> Ốp lưng điện thoại</a></li>
@@ -162,68 +111,149 @@
                                     <li><a href=""><img src="img/pk7.png" alt=""> Chuột máy tính</a></li>
                                 </ul>
                             </div>
-                            <div class="dichvu-tienich-bottom"></div>
+                        </div>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-calendar"></i> Smartwatch</a></li>
+                    <li><a href=""><i class="fa-solid fa-clock"></i> Đồng hồ</a></li>
+                    <li><a href=""><i class="fa-solid fa-tablet"></i> Tablet <span><i
+                                    class="fa-solid fa-angle-down"></i></span></a>
+                        <div class="sub-phukien">
+                            <div class="sub-phukien-top">
+                                <h3>Phụ kiện di động</h3>
+                                <ul>
+                                    <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
+                                    <li><a href=""><img src="img/pk2.png" alt=""> Sạc cáp</a></li>
+                                    <li><a href=""><img src="img/pk3.png" alt=""> Ốp lưng điện thoại</a></li>
+                                    <li><a href=""><img src="img/pk4.png" alt=""> Ốp lưng máy tính bảng</a></li>
+                                    <li><a href=""><img src="img/pk5.png" alt=""> Miếng dán</a></li>
+                                    <li><a href=""><img src="img/pk6.png" alt=""> Miếng dán Camera</a></li>
+                                    <li><a href=""><img src="img/pk7.png" alt=""> Chuột máy tính</a></li>
+                                </ul>
+                                <h3>Phụ kiện di động</h3>
+                                <ul>
+                                    <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
+
+                                    <li><a href=""><img src="img/pk4.png" alt=""> Ốp lưng máy tính bảng</a></li>
+                                    <li><a href=""><img src="img/pk5.png" alt=""> Miếng dán</a></li>
+                                    <li><a href=""><img src="img/pk6.png" alt=""> Miếng dán Camera</a></li>
+                                    <li><a href=""><img src="img/pk7.png" alt=""> Chuột máy tính</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-phukien-bottom">
+                                <h3>Phụ kiện laptop</h3>
+                                <ul>
+                                    <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
+                                    <li><a href=""><img src="img/pk2.png" alt=""> Sạc cáp</a></li>
+                                    <li><a href=""><img src="img/pk3.png" alt=""> Ốp lưng điện thoại</a></li>
+                                    <li><a href=""><img src="img/pk4.png" alt=""> Ốp lưng máy tính bảng</a></li>
+
+                                </ul>
+                                <h3>Phụ kiện laptop</h3>
+                                <ul>
+                                    <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
+                                    <li><a href=""><img src="img/pk2.png" alt=""> Sạc cáp</a></li>
+                                    <li><a href=""><img src="img/pk3.png" alt=""> Ốp lưng điện thoại</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-rotate-right"></i> Máy cũ, Thu cũ<span><i
+                                    class="fa-solid fa-angle-down"></i></span></a>
+                        <div class="sub-phukien">
+                            <div class="sub-phukien-top">
+                                <h3>Phụ kiện di động</h3>
+                                <ul>
+                                    <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
+                                    <li><a href=""><img src="img/pk2.png" alt=""> Sạc cáp</a></li>
+
+                                    <li><a href=""><img src="img/pk7.png" alt=""> Chuột máy tính</a></li>
+                                </ul>
+                                <h3>Phụ kiện di động</h3>
+                                <ul>
+                                    <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
+
+                                    <li><a href=""><img src="img/pk4.png" alt=""> Ốp lưng máy tính bảng</a></li>
+                                    <li><a href=""><img src="img/pk5.png" alt=""> Miếng dán</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-laptop"></i> Màn hình, Máy in <span><i
+                                    class="fa-solid fa-angle-down"></i></span></a>
+                        <div class="sub-phukien">
+                            <div class="sub-phukien-top">
+                                <h3>Phụ kiện di động</h3>
+                                <ul>
+                                    <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
+                                    <li><a href=""><img src="img/pk2.png" alt=""> Sạc cáp</a></li>
+
+                                    <li><a href=""><img src="img/pk7.png" alt=""> Chuột máy tính</a></li>
+                                </ul>
+                                <h3>Phụ kiện di động</h3>
+                                <ul>
+                                    <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
+
+                                    <li><a href=""><img src="img/pk4.png" alt=""> Ốp lưng máy tính bảng</a></li>
+                                    <li><a href=""><img src="img/pk5.png" alt=""> Miếng dán</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-sim-card"></i> Sim, Thẻ cào <span><i
+                                    class="fa-solid fa-angle-down"></i></span></a>
+                        <div class="sub-phukien">
+                            <div class="sub-phukien-top">
+                                <h3>Phụ kiện di động</h3>
+                                <ul>
+                                    <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
+                                    <li><a href=""><img src="img/pk2.png" alt=""> Sạc cáp</a></li>
+
+                                    <li><a href=""><img src="img/pk7.png" alt=""> Chuột máy tính</a></li>
+                                </ul>
+                                <h3>Phụ kiện di động</h3>
+                                <ul>
+                                    <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
+
+                                    <li><a href=""><img src="img/pk4.png" alt=""> Ốp lưng máy tính bảng</a></li>
+                                    <li><a href=""><img src="img/pk5.png" alt=""> Miếng dán</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-layer-group"></i> Dịch vụ tiện ích <span><i
+                                    class="fa-solid fa-angle-down"></i></span></a>
+                        <div class="sub-phukien">
+                            <div class="sub-phukien-top">
+                                <h3>Phụ kiện di động</h3>
+                                <ul>
+                                    <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
+                                    <li><a href=""><img src="img/pk2.png" alt=""> Sạc cáp</a></li>
+
+                                    <li><a href=""><img src="img/pk7.png" alt=""> Chuột máy tính</a></li>
+                                </ul>
+                                <h3>Phụ kiện di động</h3>
+                                <ul>
+                                    <li><a href=""><img src="img/pk1png.png" alt=""> Sạc dự phòng</a></li>
+
+                                    <li><a href=""><img src="img/pk4.png" alt=""> Ốp lưng máy tính bảng</a></li>
+                                    <li><a href=""><img src="img/pk5.png" alt=""> Miếng dán</a></li>
+
+                                </ul>
+                            </div>
+
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-    </header>
-    <main>
-        
-    </main>
-    <footer>
-        <div class="container-footer">
-            <div class="TongDaiHoTro">
-                <h3>Tổng đài hỗ trợ</h3>
-                <ul>
-                    <li><a href="">Gọi mua: <span style="color: blue;font-weight: bold;">1900 232 460</span> (8:00 -
-                            21-30)</a></li>
-                    <li><a href="">Khiếu nại: <span style="color: blue;font-weight: bold;">1900 232 460</span> (8:00 -
-                            21-30)</a></li>
-                    <li><a href="">Bảo hành: <span style="color: blue;font-weight: bold;">1900 232 460</span> (8:00 -
-                            21-30)</a></li>
-                </ul>
-            </div>
-            <div class="VeCongTy">
-                <h3>Về công ty</h3>
-                <ul>
-                    <li><a href="">Giới thiệu công ty (MWG.vn)</a></li>
-                    <li><a href="">Tuyển dụng</a></li>
-                    <li><a href="">Gửi góp ý, khiếu nại</a></li>
-                    <li><a href="">Tìm siêu thị (2.948 shop)</a></li>
-                </ul>
-            </div>
-            <div class="ThongTinKhac">
-                <h3>Thông tin khác</h3>
-                <ul>
-                    <li><a href="">Tích điểm Quà tặng VIP</a></li>
-                    <li><a href="">Lịch sử mua hàng</a></li>
-                    <li><a href="">Đăng ký bán CTV chiết khấu cao</a></li>
-                    <li><a href="">Tìm hiểu về mua trả chậm</a></li>
-                    <li><a href="">Chính sách bảo hành</a></li>
-                    <li><a href="">Xem thêm <span><i class="fa-solid fa-angle-down"></i></span></a></li>
-
-                </ul>
-            </div>
-            <div class="WebsiteTapDoan">
-                <h4 style="font-weight: normal;">Website cùng tập đoàn</h4>
-                <ul>
-                    <li><a href=""></a>Tích điểm Quà tặng VIP</li>
-                    <li><a href="">Lịch sử mua hàng</a></li>
-                    <li><a href="">Đăng ký bán CTV chiết khấu cao</a></li>
-                    <li><a href="">Tìm hiểu về mua trả chậm</a></li>
-                    <li><a href="">Chính sách bảo hành</a></li>
-                    <li><a href="">Xem thêm <span><i class="fa-solid fa-angle-down"></i></span></a></li>
-
-                </ul>
-            </div>
-        </div>
-        <div class="container-footer-bottom">
-            <p>© 2018. Công Ty Cổ Phần Đầu Tư Điện Máy Xanh. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007. GPMXH: 21/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 11/01/2021.
-Địa chỉ: 128 Trần Quang Khải, P.Tân Định, TP. Hồ Chí Minh. Địa chỉ liên hệ và gửi chứng từ: Lô T2-1.2, Đường D1, P.Tăng Nhơn Phú, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: hotrotmdt@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. Đại diện ủy quyền giải quyết các vấn đề liên quan bảo vệ quyền lợi người tiêu dùng: Huỳnh Văn Tốt. Email: hotrotmdt@thegioididong.com. Xem chính sách sử dụng</p>
-        </div>
-    </footer>
+    </section>
     <script src="main.js"></script>
 </body>
 
